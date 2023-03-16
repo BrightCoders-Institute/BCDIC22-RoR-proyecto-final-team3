@@ -3,7 +3,12 @@ class OrdersController < ApplicationController
   def index
     @items = Item.all
     @tables = Table.all
-    @orders = Order.select("DISTINCT ON (tables_id) *").order("tables_id, created_at DESC")
+    @mesa_seleccionada = session[:mesa_seleccionada]
+    @orders = Order.all
+
+    @category = params[:category]
+
+
     @category = params[:category]
 
     @input = params[:name]
