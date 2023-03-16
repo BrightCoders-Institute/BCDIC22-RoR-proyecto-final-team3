@@ -5,6 +5,7 @@ class OrdersController < ApplicationController
     @tables = Table.all
     @orders = Order.select("DISTINCT ON (tables_id) *").order("tables_id, created_at DESC")
     @category = params[:category]
+
     @input = params[:name]
     @order = (Order.count + 1) unless (@order = params[:order])
 
