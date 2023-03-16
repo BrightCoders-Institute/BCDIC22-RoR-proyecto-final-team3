@@ -8,9 +8,6 @@ class OrdersController < ApplicationController
 
     @category = params[:category]
 
-
-    @category = params[:category]
-
     @input = params[:name]
     if @input
       @products = Item.where('name ILIKE ?', "%#{@input}%")
