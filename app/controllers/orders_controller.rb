@@ -4,6 +4,7 @@ class OrdersController < ApplicationController
     @items = Item.all
     @tables = Table.all
     @orders = Order.all
+
     @category = params[:category]
     @input = params[:name]
     @order = (Order.count + 1) unless (@order = params[:order])
