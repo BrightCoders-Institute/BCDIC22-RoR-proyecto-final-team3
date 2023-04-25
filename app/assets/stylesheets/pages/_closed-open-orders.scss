@@ -218,7 +218,12 @@
           }
 
           li:last-of-type {
+            align-items: center;
             border-bottom: none;
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            padding: 0 30px;
           }
         }
       }
