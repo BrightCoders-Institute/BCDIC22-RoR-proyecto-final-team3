@@ -163,9 +163,11 @@
               color: $red-color-main-button;
               display: flex;
               justify-content: space-evenly;
+              min-width: 55px;
               p {
                 color: $black-light;
-                margin-left: 35px;
+                width: 100%;
+                text-align: center;
 
               }
             }
@@ -174,11 +176,12 @@
               color: $red-color-main-button;
               display: flex;
               justify-content: space-evenly;
-              margin-right: 35px;
-              margin-left: 35px;
+              margin-right: 7px;
+              margin-left: 19px;
+              width: 120xp;
               p {
                 color: $black-light;
-                margin-left: 45px;
+                text-align: center;
               }
             }
 
