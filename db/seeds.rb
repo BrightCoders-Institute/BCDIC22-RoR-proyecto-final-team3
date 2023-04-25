@@ -36,16 +36,7 @@ def randstatus
 end
 
 
-numberOrders.times do |i|
-  if rand(0..1) == 1
-    Order.create(
-      tables_id: i+1,
-      status: randstatus,
-      total: Faker::Number.between(from: 300, to: 1000),
-      note: Faker::Food.description,
-    )
-  end
-end
+
 
 
 #Ordersitems
@@ -209,5 +200,16 @@ totalDays.times do |i|
       OrdersItem.create(order_id: order.id, item_id: rand(1..totalnumberitems),
                         quantity: Faker::Number.between(from: 1, to: 3))
     end
+  end
+end
+
+numberOrders.times do |i|
+  if rand(0..1) == 1
+    Order.create(
+      tables_id: i+1,
+      status: randstatus,
+      total: Faker::Number.between(from: 300, to: 1000),
+      note: Faker::Food.description,
+    )
   end
 end
