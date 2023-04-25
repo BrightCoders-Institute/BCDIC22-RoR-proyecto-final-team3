@@ -108,7 +108,7 @@ item.image.attach(io: File.open('app/assets/images/seed/mcflurry.png'), filename
 
 
 # Ingredientes para las comidas
-Ingredient.create(name: 'Carne de res', quant: 'grams', price: 0.12, total: rand(700..1800))
+Ingredient.create(name: 'Carne de res', quant: 'grams', price: 0.12, total: rand(900..1800))
 Ingredient.create(name: 'Queso americano', quant: 'grams', price: 0.08, total: rand(700..1800))
 Ingredient.create(name: 'Aros de cebolla crujientes', quant: 'grams', price: 0.05, total: rand(700..1800))
 Ingredient.create(name: 'Salsa BBQ', quant: 'ml', price: 0.02, total: rand(700..1800))
