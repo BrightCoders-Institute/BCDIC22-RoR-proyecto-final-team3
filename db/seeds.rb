@@ -132,7 +132,7 @@ Ingredient.create(name: 'Jugo de limón', quant: 'ml', price: 0.01, total: rand(
 Ingredient.create(name: 'Jugo de arándanos', quant: 'ml', price: 0.02, total: rand(700..1800))
 Ingredient.create(name: 'Tónica', quant: 'ml', price: 0.01, total: rand(700..1800))
 Ingredient.create(name: 'Agua', quant: 'ml', price: 0.01, total: rand(700..1800))
-Ingredient.create(name: 'Té negro', quant: 'grams', price: 0.03, total: rand(700..1800))
+Ingredient.create(name: 'Té negro', quant: 'grams', price: 0.03, total: rand(600..1800))
 Ingredient.create(name: 'Jarabe natural', quant: 'ml', price: 0.02, total: rand(700..1800))
 Ingredient.create(name: 'Jugo de naranja', quant: 'ml', price: 0.02, total: rand(700..1800))
 Ingredient.create(name: 'Jugo de naranja', quant: 'ml', price: 0.02, total: rand(700..1800))
